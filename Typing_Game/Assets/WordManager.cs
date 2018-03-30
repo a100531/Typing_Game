@@ -10,16 +10,11 @@ public class WordManager : MonoBehaviour {
 	 private Word activeWord;
 
 	 #region methods
-		 private void Start()
-		 {
-			 AddWord();
-			 AddWord();
-			 AddWord();
-		 }
+		 
 		 public void AddWord()
 		 {
 			 Word word = new Word(WordGenerator.GetRandomWord(), wordSpawner.SpawnWord());
-			 Debug.Log(word.word);
+			 //Debug.Log(word.word);
 
 			 words.Add(word);
 		 }

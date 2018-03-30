@@ -35,5 +35,15 @@ public class Word {
 		}
 		return wordTyped;
 	}
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.tag == "GameOver")
+		{
+			Debug.Log("Hit");
+			Time.timeScale = 0;
+		}
+		
+	}
 	
 }
