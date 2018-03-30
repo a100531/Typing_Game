@@ -24,14 +24,14 @@ public class Word {
 	public void TypeLetter()
 	{
 		typeIndex++;
-
+		display.RemoveLetter();
 	}
 	public bool WordTyped()
 	{
 		bool wordTyped = (typeIndex >= word.Length);
 		if (wordTyped)
 		{
-			
+			display.RemoveWord();
 		}
 		return wordTyped;
 	}
