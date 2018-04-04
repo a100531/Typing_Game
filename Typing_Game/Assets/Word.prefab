@@ -122,6 +122,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 114525635957462428}
   fallSpeed: 1
+  wordDestroyEffect: {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9,
+    type: 2}
 --- !u!222 &222186758309169018
 CanvasRenderer:
   m_ObjectHideFlags: 1

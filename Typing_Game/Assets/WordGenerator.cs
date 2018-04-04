@@ -5,7 +5,7 @@ using UnityEngine;
 public class WordGenerator : MonoBehaviour {
 
 	private static string[] wordList = {"sidewalk", "robin", "three", "protect", "periodic",
-									"somber", "majestic", "jump", "pretty", "wound", "jazzy",
+									"somber", "majestic", "jump","joana","darren","daniel","almighty redd", "pretty", "wound", "jazzy",
 									"memory", "join", "crack", "grade", "boot", "cloudy", "sick",
 									"mug", "hot", "tart", "dangerous", "mother", "rustic", "economic",
 									"weird", "cut", "parallel", "wood", "encouraging", "interrupt",

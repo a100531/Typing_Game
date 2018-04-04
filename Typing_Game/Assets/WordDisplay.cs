@@ -8,6 +8,8 @@ public class WordDisplay : MonoBehaviour {
 	public Text text;
 	public float fallSpeed = 1f;
 
+	public GameObject wordDestroyEffect;
+
 	public void SetWord (string word)
 	{
 		text.text = word;
@@ -19,6 +21,7 @@ public class WordDisplay : MonoBehaviour {
 	}
 	public void RemoveWord()
 	{
+		Instantiate(wordDestroyEffect,transform.position,transform.rotation);
 		Destroy(gameObject);
 	}
 
