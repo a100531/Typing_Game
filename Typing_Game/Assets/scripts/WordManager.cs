@@ -7,16 +7,23 @@ public class WordManager : MonoBehaviour {
 	 public List<Word> words;
 	 public WordSpawner wordSpawner;
 	 private bool hasActiveWord;
+	 public bool begin;
 	 private Word activeWord;
 
 	 #region methods
-		 
+		 private void Start() {
+			 begin = false;
+		 }
 		 public void AddWord()
 		 {
-			 Word word = new Word(WordGenerator.GetRandomWord(), wordSpawner.SpawnWord());
-			 //Debug.Log(word.word);
+			 if (begin)
+			 {
+				Word word = new Word(WordGenerator.GetRandomWord(), wordSpawner.SpawnWord());
+			 	//Debug.Log(word.word);
 
-			 words.Add(word);
+			 	words.Add(word);
+			 }
+			 
 		 }
 
 		 public void TypeLetter(char letter)
