@@ -287,7 +287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   words: []
   wordSpawner: {fileID: 532716977}
-  begin: 1
+  score: 0
 --- !u!4 &532716975
 Transform:
   m_ObjectHideFlags: 0

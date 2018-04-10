@@ -7,22 +7,26 @@ public class WordManager : MonoBehaviour {
 	 public List<Word> words;
 	 public WordSpawner wordSpawner;
 	 private bool hasActiveWord;
+	 
+	 public static int score;
 	 //public bool begin;
 	 private Word activeWord;
 
 	 #region methods
-		 private void Start() {
-			 //begin = false;
+		 private void Start() 
+		 {
+
+		 }
+		 private void Update() {
 		 }
 		 public void AddWord()
 		 {
-			 //if (begin)
-			 //{
+			 
 				Word word = new Word(WordGenerator.GetRandomWord(), wordSpawner.SpawnWord());
 			 	//Debug.Log(word.word);
 
 			 	words.Add(word);
-			// }
+			
 			 
 		 }
 
@@ -52,6 +56,7 @@ public class WordManager : MonoBehaviour {
 			{
 				hasActiveWord = false;
 				words.Remove(activeWord);
+				score ++;
 			}
 		 }
 	 #endregion

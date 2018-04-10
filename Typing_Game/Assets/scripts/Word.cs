@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 [System.Serializable]
 public class Word {
 
@@ -36,14 +37,5 @@ public class Word {
 		return wordTyped;
 	}
 
-	void OnTriggerEnter2D(Collider2D other)
-	{
-		if (other.tag == "GameOver")
-		{
-			Debug.Log("Hit");
-			Time.timeScale = 0;
-		}
-		
-	}
 	
 }

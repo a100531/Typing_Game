@@ -7,7 +7,7 @@ public class WordSpawner : MonoBehaviour {
 	public Transform wordCanvas;
 	public WordDisplay SpawnWord()
 	{
-		Vector3 randomPosition = new Vector3(Random.Range(-2f,2f),7f);
+		Vector3 randomPosition = new Vector3(Random.Range(-1.75f,1.75f),7f);
 		GameObject wordObj = Instantiate(wordPrefab,randomPosition, Quaternion.identity, wordCanvas);
 		WordDisplay wordDisplay = wordObj.GetComponent<WordDisplay>();
 

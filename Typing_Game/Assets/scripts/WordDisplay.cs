@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class WordDisplay : MonoBehaviour {
 
@@ -9,6 +10,8 @@ public class WordDisplay : MonoBehaviour {
 	public float fallSpeed = 1f;
 
 	public GameObject wordDestroyEffect;
+
+	public WordManager wordManager;
 
 	public void SetWord (string word)
 	{
@@ -35,6 +38,8 @@ public class WordDisplay : MonoBehaviour {
 		{
 			Debug.Log("Hit");
 			Time.timeScale = 0;
+			Debug.Log(WordManager.score);
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 		}
 		
 	}
