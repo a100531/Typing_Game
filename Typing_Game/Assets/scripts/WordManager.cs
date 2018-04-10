@@ -7,22 +7,22 @@ public class WordManager : MonoBehaviour {
 	 public List<Word> words;
 	 public WordSpawner wordSpawner;
 	 private bool hasActiveWord;
-	 public bool begin;
+	 //public bool begin;
 	 private Word activeWord;
 
 	 #region methods
 		 private void Start() {
-			 begin = false;
+			 //begin = false;
 		 }
 		 public void AddWord()
 		 {
-			 if (begin)
-			 {
+			 //if (begin)
+			 //{
 				Word word = new Word(WordGenerator.GetRandomWord(), wordSpawner.SpawnWord());
 			 	//Debug.Log(word.word);
 
 			 	words.Add(word);
-			 }
+			// }
 			 
 		 }
 
